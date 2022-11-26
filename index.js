@@ -135,15 +135,15 @@ app.get("/download/files2", async (_req, res) => {
         return new Promise((resolve, _reject) => {
           bucket.openDownloadStream(file._id).pipe(
             (() => {
-              const data = [];
+              const chunks = [];
               return new Transform({
                 // transform method will
                 transform(chunk, encoding, done) {
-                  data.push(chunk);
+                  chunks.push(chunk);
                   done();
                 },
                 flush(done) {
-                  const fbuf = Buffer.concat(data);
+                  const fbuf = Buffer.concat(chunks);
                   const fileBase64String = fbuf.toString("base64");
                   resolve(fileBase64String);
                   done();
