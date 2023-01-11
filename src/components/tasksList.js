@@ -29,7 +29,7 @@ function TasksList() {
 
   return (
     <div className="container">
-      <h1>Task List</h1>
+      <h1>Tasks List</h1>
       <div className="task-form">
         <input
           type="text"
