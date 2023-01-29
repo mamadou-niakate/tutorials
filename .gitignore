@@ -1,0 +1,38 @@
+# dependencies
+/start/.pnp
+/end/.pnp
+
+/end/.pnp.js
+/start/.pnp.js
+
+/end/node_modules
+/start/node_modules
+
+# testing
+/start/coverage
+/end/coverage
+
+# production
+/start/build
+/end/build
+
+# misc
+/start/.DS_Store
+/end/.DS_Store
+/start/.DS_Store.env.local
+/start/.DS_Store.env.development.local
+/start/.DS_Store.env.test.local
+/start/.DS_Store.env.production.local
+
+/end/.DS_Store.env.local
+/end/.DS_Store.env.development.local
+/end/.DS_Store.env.test.local
+/end/.DS_Store.env.production.local
+
+/start/npm-debug.log*
+/start/yarn-debug.log*
+/start/yarn-error.log*
+
+/end/npm-debug.log*
+/end/yarn-debug.log*
+/end/yarn-error.log*
